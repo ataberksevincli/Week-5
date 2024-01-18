@@ -1,6 +1,3 @@
-SELECT DISTINCT replacement_cost FROM film;
-SELECT COUNT(DISTINCT replacement_cost) FROM film;
-SELECT COUNT(DISTINCT title LIKE 'T%' AND rating = 'G') FROM film;
-SELECT COUNT(length(country) = 5) FROM country;
-SELECT COUNT(length(country) = 5) FROM country;
-SELECT COUNT(city) FROM city WHERE city ILIKE '%r';
+SELECT title,length FROM film WHERE title LIKE '%n' ORDER BY length DESC LIMIT 5;
+SELECT title,length FROM film WHERE title LIKE '%n' ORDER BY length OFFSET 5 LIMIT 5;
+SELECT last_name FROM customer WHERE store_id = 1 ORDER BY last_name DESC LIMIT 4; 

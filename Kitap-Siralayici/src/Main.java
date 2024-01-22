@@ -2,7 +2,7 @@ import java.util.TreeSet;
 
 public class Main {
     public static void main(String[] args) {
-
+// treeset oluşturuldu
         TreeSet<Book> book = new TreeSet<>(new OrderNameComparable());
         book.add(new Book("Lord of the Rings", 1200, "J.R.R Tolkien", 1954));
         book.add(new Book("Hunger Games", 1805, "Suzanne Collins", 2008));
